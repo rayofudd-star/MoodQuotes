@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivational Quotes by Emotion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Motivational Quotes for Every Emotion</h1>
+        <div class="emotion-buttons">
+            <button class="emotion-btn" onclick="getQuote('happy')">Happy</button>
+            <button class="emotion-btn" onclick="getQuote('sad')">Sad</button>
+            <button class="emotion-btn" onclick="getQuote('angry')">Angry</button>
+            <button class="emotion-btn" onclick="getQuote('inspired')">Inspired</button>
+            <button class="emotion-btn" onclick="getQuote('confident')">Confident</button>
+            <button class="emotion-btn" onclick="getQuote('anxious')">Anxious</button>
+            <button class="emotion-btn" onclick="getQuote('hopeful')">Hopeful</button>
+        </div>
+        <div class="quote-display">
+            <p id="quote">Click an emotion to get a motivational quote!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
