@@ -1,4 +1,15 @@
 * {
+    img {
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 800px) {
+  .sidebar, .content {
+    width: 100%;
+    float: none;
+  }
+}
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -69,3 +80,4 @@ body {
 .quote-display.fade-out {
     opacity: 0;
 }
+
