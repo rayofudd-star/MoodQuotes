@@ -13,7 +13,12 @@
   }
 }
 
-    
+ @media (max-width: 768px) {
+  .button-container {
+    flex-direction: column;
+  }
+}
+   
 }
 
     margin: 0;
@@ -53,6 +58,7 @@ body {
     justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
+    flex-direction: column
 }
 
 .emotion-btn {
@@ -86,5 +92,6 @@ body {
 .quote-display.fade-out {
     opacity: 0;
 }
+
 
 
