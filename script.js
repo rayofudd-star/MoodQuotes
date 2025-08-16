@@ -3,12 +3,30 @@ const quotes = {
     happy: [
         "Happiness is not something ready made. It comes from your own actions. - Dalai Lama",
         "For every minute you are angry you lose sixty seconds of happiness. - Ralph Waldo Emerson",
-        "Happiness depends upon ourselves. - Aristotle"
+        "Happiness depends upon ourselves. - Aristotle",
+        "Happiness is not something ready made. It comes from your own actions. — Dalai Lama",
+        "For every minute you are angry, you lose sixty seconds of happiness. — Ralph Waldo Emerson",
+        "Be happy for this moment. This moment is your life. — Omar Khayyam",
+        "The purpose of our lives is to be happy. — Dalai Lama",
+        "Happiness is the secret to all beauty. There is no beauty without happiness. — Christian Dior",
+        "Count your age by friends, not years. Count your life by smiles, not tears.—  John Lennon",
+        "Think of all the beauty still left around you and be happy. — Anne Frank",
+        "Happiness depends upon ourselves. — Aristotle",
+        "The only joy in the world is to begin. — Cesare Pavese",
+        "Success is not the key to happiness. Happiness is the key to success. — Albert Schweitzer"
+        
     ],
     sad: [
         "Sadness is but a wall between two gardens. - Kahlil Gibran",
         "The pain you feel today is the strength you feel tomorrow. - Unknown",
-        "Tears come from the heart and not from the brain. - Leonardo da Vinci"
+        "Tears come from the heart and not from the brain. - Leonardo da Vinci",
+        “Stars can’t shine without darkness.”,
+        “This too shall pass. Pain is temporary, but growth is permanent.”,
+         “Even the darkest night will end, and the sun will rise. – Victor Hugo",
+         “Every adversity, every heartbreak, carries with it the seed of an equal or greater benefit.– Napoleon Hill",
+         “You never know how strong you are, until being strong is your only choice. – Bob Marley",
+         “Sadness gives depth. Happiness gives height. Sadness gives roots. Happiness gives branches. Both are needed. – Osho"
+        
     ],
     angry: [
         "Anger is one letter short of danger. - Eleanor Roosevelt",
@@ -51,3 +69,4 @@ function getQuote(emotion) {
         quoteDisplay.classList.remove("fade-out");
     }, 500);
 }
+
