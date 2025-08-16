@@ -20,12 +20,12 @@ const quotes = {
         "Sadness is but a wall between two gardens. - Kahlil Gibran",
         "The pain you feel today is the strength you feel tomorrow. - Unknown",
         "Tears come from the heart and not from the brain. - Leonardo da Vinci",
-        “Stars can’t shine without darkness.”,
-        “This too shall pass. Pain is temporary, but growth is permanent.”,
-         “Even the darkest night will end, and the sun will rise. – Victor Hugo",
-         “Every adversity, every heartbreak, carries with it the seed of an equal or greater benefit.– Napoleon Hill",
-         “You never know how strong you are, until being strong is your only choice. – Bob Marley",
-         “Sadness gives depth. Happiness gives height. Sadness gives roots. Happiness gives branches. Both are needed. – Osho"
+        "Stars can’t shine without darkness.”,
+        "This too shall pass. Pain is temporary, but growth is permanent.”,
+        "Even the darkest night will end, and the sun will rise. – Victor Hugo",
+        "Every adversity, every heartbreak, carries with it the seed of an equal or greater benefit.– Napoleon Hill",
+        "You never know how strong you are, until being strong is your only choice. – Bob Marley",
+        "Sadness gives depth. Happiness gives height. Sadness gives roots. Happiness gives branches. Both are needed. – Osho"
         
     ],
     angry: [
@@ -69,4 +69,5 @@ function getQuote(emotion) {
         quoteDisplay.classList.remove("fade-out");
     }, 500);
 }
+
 
