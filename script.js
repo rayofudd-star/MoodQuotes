@@ -1,312 +1,165 @@
+// Sample set of quotes categorized by emotions
 const quotes = {
     happy: [
         "Happiness is not something ready made. It comes from your own actions. - Dalai Lama",
         "For every minute you are angry you lose sixty seconds of happiness. - Ralph Waldo Emerson",
-        "Happiness is not something ready made. It comes from your own actions. - Dalai Lama",
-        "For every minute you are angry you lose sixty seconds of happiness. - Ralph Waldo Emerson",
-        "Happiness depends upon ourselves. - Aristotle",
-        "Be happy for this moment. This moment is your life. — Omar Khayyam",
-        "The purpose of our lives is to be happy. — Dalai Lama",
-        "Happiness is the secret to all beauty. There is no beauty without happiness. — Christian Dior",
-        "Count your age by friends, not years. Count your life by smiles, not tears. — John Lennon",
-        "Think of all the beauty still left around you and be happy. — Anne Frank",
-        "The only joy in the world is to begin. — Cesare Pavese",
-        "Success is not the key to happiness. Happiness is the key to success. — Albert Schweitzer",
-        "Happiness is when what you think, what you say, and what you do are in harmony. — Mahatma Gandhi",
-        "Happiness is the art of never holding in your mind the memory of any unpleasant thing that has passed. — Unknown",
-        "Happiness consists more in conveniences of pleasure that occur everyday than in great pieces of good fortune that happen but seldom. — Benjamin Franklin",
-        "Happiness grows at our own firesides, and is not to be picked in strangers' gardens. — Douglas William Jerrold",
-        "The joy of life consists in the exercise of one's energies, continual growth, constant change, the enjoyment of every new experience. — Aleister Crowley",
-        "Happiness is not by chance, but by choice. — Jim Rohn",
-        "The happiest people don't have the best of everything, they just make the best of everything. — Unknown",
-        "Happiness depends upon ourselves. — Aristotle",
-        "Happiness held is the seed; happiness shared is the flower. — John Harrigan",
-        "Happiness is a direction, not a place. — Sydney J. Harris",
-        "Happiness is the only good. — Democritus",
-        "The secret of happiness, you see, is not found in seeking more, but in developing the capacity to enjoy less. — Socrates",
-        "Happiness is the natural flower of duty. — Phillips Brooks",
-        "True happiness is... to enjoy the present, without anxious dependence upon the future. — Lucius Annaeus Seneca",
-        "Happiness depends on ourselves. — Aristotle",
-        "To be happy, we must be true to nature and carry our age along with us. — Margaret Fuller",
-        "Happiness is the settling of the soul into its most appropriate spot. — Aristotle",
-        "Happiness is a state of activity. — Aristotle",
-        "Joy is not in things; it is in us. — Richard Wagner",
-        "Happiness radiates like the fragrance from a flower and draws all good things towards you. — Maharishi Mahesh Yogi",
-        "Happiness is a habit—cultivate it. — Elbert Hubbard",
-        "The happiness of your life depends upon the quality of your thoughts. — Marcus Aurelius",
-        "The grand essentials of happiness are: something to do, something to love, and something to hope for. — Allan K. Chalmers",
-        "There is only one happiness in life: to love and be loved. — George Sand",
-        "Those who bring sunshine to the lives of others cannot keep it from themselves. — James M. Barrie",
-        "Happiness is when you feel good about yourself and your life, regardless of what’s going on around you. — Unknown",
-        "Happiness often sneaks in through a door you didn't know you left open. — John Barrymore",
-        "Be happy with what you have while working for what you want. — Helen Keller",
-        "The best way to pay for a lovely moment is to enjoy it. — Richard Bach",
-        "Happiness lies in the joy of achievement and the thrill of creative effort. — Franklin D. Roosevelt",
-        "Most folks are as happy as they make up their minds to be. — Abraham Lincoln",
-        "Think of all the beauty still left around you and be happy. — Anne Frank",
-        "Your success and happiness lie in you. Resolve to keep happy, and your joy and you shall form an invincible host against difficulties. — Helen Keller",
-        "If you want to be happy, be. — Leo Tolstoy",
-        "Happiness is a warm puppy. — Charles M. Schulz",
-        "To get the full value of joy you must have someone to divide it with. — Mark Twain",
-        "Happiness is the meaning and the purpose of life, the whole aim and end of human existence. — Aristotle",
-        "Happiness grows in direct proportion to our acceptance and in inverse proportion to our expectations. — Unknown",
-        "The best way to cheer yourself is to try to cheer someone else up. — Mark Twain",
-        "Happiness is the only thing that multiplies when you share it. — Albert Schweitzer",
-        "A happy heart makes a cheerful face. — Proverbs",
-        "The mere sense of living is joy enough. — Emily Dickinson",
-        "Happiness is letting go of what you think your life is supposed to look like and celebrating it for everything that it is. — Mandy Hale",
-        "Happiness depends upon ourselves. — Aristotle",
-        "Joy does not simply happen to us. We have to choose joy and keep choosing it every day. — Henri Nouwen",
-        "The moments of happiness we enjoy take us by surprise. It is not that we seize them, but that they seize us. — Ashley Montagu",
-        "Happiness cannot be traveled to owned, earned, worn or consumed. Happiness is the spiritual experience of living every minute with love, grace, and gratitude. — Denis Waitley",
-        "Happiness is not in the mere possession of money; it lies in the joy of achievement, in the thrill of creative effort. — Franklin D. Roosevelt",
-        "Happiness depends on your mindset and attitude. — Roy T. Bennett",
-        "There is no path to happiness: happiness is the path. — Gautama Buddha",
-        "Happiness is an inside job. Don't assign anyone else that much power over your life. — Mandy Hale",
-        "Happiness is a journey, not a destination. — Unknown",
-        "Happiness is found when you stop comparing yourself to other people. — Unknown",
-        "Happiness is the consequence of personal effort. — Elizabeth Kubler-Ross",
-        "Joy comes in the morning. — Psalms 30:5",
-        "You don’t have to be happy all the time to be happy. — Unknown",
-        "Happiness is homemade. — Unknown",
-        "The secret to happiness is freedom... And the secret to freedom is courage. — Thucydides",
-        "Happiness is the highest good. — Aristotle",
-        "Happiness is not by chance, but by choice. — Jim Rohn",
-        "Happiness is the only good. — Democritus",
-        "Happiness is a warm puppy. — Charles M. Schulz",
-        "Happiness is the settling of the soul into its most appropriate spot. — Aristotle",
-        "The art of being happy lies in the power of extracting happiness from common things. — Henry Ward Beecher",
-        "The happiest people don't necessarily have the best of everything; they just make the best of everything they have. — Unknown",
-        "Happiness is a direction, not a place. — Sydney J. Harris",
-        "Laugh as much as you breathe, love as long as you live. — Johnny Depp",
-        "Happiness depends more on the inward disposition of mind than on outward circumstances. — Benjamin Franklin",
-        "There is no duty we so much underrate as the duty of being happy. — Robert Louis Stevenson",
-        "The grand essentials of happiness are: something to do, something to love, and something to hope for. — Allan K. Chalmers",
-        "Happiness is a perfume you cannot pour on others without getting a few drops on yourself. — Ralph Waldo Emerson",
-        "Joy is the simplest form of gratitude. — Karl Barth",
-        "Happiness is a by-product of an effort to make someone else happy. — Gretta Brooker Palmer",
-        "Happiness held is the seed; happiness shared is the flower. — John Harrigan",
-        "The good life is one inspired by love and guided by knowledge. — Bertrand Russell",
-        "Be happy for this moment. This moment is your life. — Omar Khayyam",
-        "Happiness depends upon ourselves. — Aristotle",
-        "Happiness is not something ready made. It comes from your own actions. — Dalai Lama",
-        "If you want to be happy, set a goal that commands your thoughts, liberates your energy, and inspires your hopes. — Andrew Carnegie",
-        "Happiness is like a butterfly; the more you chase it, the more it will elude you, but if you turn your attention to other things, it comes and sits softly on your shoulder. — Henry David Thoreau",
-        "The best thing about the future is that it comes one day at a time. — Abraham Lincoln",
-        "It is not how much we have, but how much we enjoy that makes happiness. — Charles Spurgeon",
-        "Happiness is not being pained in body or troubled in mind. — Thomas Jefferson",
-        "Happiness is a state of activity. — Aristotle"
-      
+        "Happiness depends upon ourselves. - Aristotle"
+        "Happiness is not something ready made. It comes from your own actions. - Dalai Lama"
+"For every minute you are angry you lose sixty seconds of happiness. - Ralph Waldo Emerson"
+"Happiness depends upon ourselves. - Aristotle"
+"Be happy for this moment. This moment is your life. - Omar Khayyam"
+"The purpose of our lives is to be happy. - Dalai Lama"
+"Happiness is the secret to all beauty. There is no beauty without happiness. - Christian Dior"
+"Count your age by friends, not years. Count your life by smiles, not tears. - John Lennon"
+"Think of all the beauty still left around you and be happy. - Anne Frank"
+"The only joy in the world is to begin. - Cesare Pavese"
+"Success is not the key to happiness. Happiness is the key to success. - Albert Schweitzer"
+"Happiness is when what you think, what you say, and what you do are in harmony. - Mahatma Gandhi"
+"The happiest people don’t have the best of everything—they just make the best of everything. - Unknown"
+"The happiness of your life depends upon the quality of your thoughts. - Marcus Aurelius"
+"If you want to be happy, be. - Leo Tolstoy"
+"Happiness is a direction, not a place. - Sydney J. Harris"
+"Most folks are as happy as they make up their minds to be. - Abraham Lincoln"
+"Happiness is a warm puppy. - Charles M. Schulz"
+"Happiness is not by chance, but by choice. - Jim Rohn"
+"Be happy with what you have while working for what you want. - Helen Keller"
+"Let us be grateful to the people who make us happy. - Marcel Proust"
+"Happiness radiates like the fragrance from a flower and draws all good things towards you. - Maharishi Mahesh Yogi"
+"Happiness grows at our own firesides, and is not to be picked in strangers' gardens. - Douglas William Jerrold"
+"The best way to cheer yourself is to try to cheer someone else up. - Mark Twain"
+"Joy is not in things; it is in us. - Richard Wagner"
+"Happy he who learns to bear what he cannot change. - Friedrich Schiller"
+"Happiness held is the seed; happiness shared is the flower. - John Harrigan"
+"To be happy, we must not be too concerned with others. - Albert Camus"
+"Happiness is the art of never holding in your mind the memory of any unpleasant thing that has passed. - Unknown"
+"Happiness is acceptance. - Unknown"
+"The talent for being happy is appreciating and liking what you have, instead of what you don't have. - Woody Allen"
+"Some cause happiness wherever they go; others whenever they go. - Oscar Wilde"
+"Don’t wait around for other people to be happy for you. Any happiness you get you’ve got to make yourself. - Alice Walker"
+"Happiness is not something you postpone for the future; it is something you design for the present. - Jim Rohn"
+"The joy of life consists in the exercise of one's energies, continual growth, constant change, the enjoyment of every new experience. - Aleister Crowley"
+"Happiness is like a kiss. You must share it to enjoy it. - Bernard Meltzer"
+"True happiness arises, in the first place, from the enjoyment of oneself. - Joseph Addison"
+"The secret to happiness is freedom, and the secret to freedom is courage. - Thucydides"
+"Happiness makes up in height for what it lacks in length. - Robert Frost"
+"Of all forms of caution, caution in love is perhaps the most fatal to true happiness. - Bertrand Russell"
+"A happy heart makes a cheerful face. - Proverbs"
+"The grand essentials to happiness in this life are something to do, something to love, and something to hope for. - Allan K. Chalmers"
+"The present moment is filled with joy and happiness. If you are attentive, you will see it. - Thich Nhat Hanh"
+"Happiness is not a goal; it is a by-product. - Eleanor Roosevelt"
+"There is only one happiness in this life, to love and be loved. - George Sand"
+"Happiness is a journey, not a destination. - Ben Sweetland"
+"Whoever is happy will make others happy. - Anne Frank"
+"Doing what you like is freedom. Liking what you do is happiness. - Unknown"
+"The happiest people are the givers, not the takers. - Unknown"
+"A cheerful heart is good medicine. - Proverbs"
+"Happiness often sneaks in through a door you didn’t know you left open. - John Barrymore"
+"Happiness is the meaning and the purpose of life, the whole aim and end of human existence. - Aristotle"
+"Thousands of candles can be lit from a single candle, and the life of the candle will not be shortened. Happiness never decreases by being shared. - Buddha"
+"Joy does not simply happen to us. We have to choose joy and keep choosing it every day. - Henri J.M. Nouwen"
+"The surest way to happiness is to lose yourself in a cause greater than yourself. - Unknown"
+"Spend more time doing what makes you forget about the time. - Charlotte Eriksson"
+"If you want happiness for an hour, take a nap. If you want happiness for a day, go fishing. If you want happiness for a year, inherit a fortune. If you want happiness for a lifetime, help someone else. - Chinese Proverb"
+"If you want to live a happy life, tie it to a goal, not to people or things. - Albert Einstein"
+"An effort made for the happiness of others lifts us above ourselves. - Lydia M. Child"
+"Being happy never goes out of style. - Lilly Pulitzer"
+"Happiness comes in waves. It’ll find you again. - Unknown"
+"The secret of happiness is to admire without desiring. - Carl Sandburg"
+"Happiness comes from contentment. - Dalai Lama"
+"No medicine cures what happiness cannot. - Gabriel García Márquez"
+"Happiness is a choice that requires effort at times. - Aeschylus"
+"The happiest people don't necessarily have the best of everything; they just make the best of everything. - Sam Cawthorn"
+"Learn to let go. That is the key to happiness. - Buddha"
+"Whatever you decide to do, make sure it makes you happy. - Paulo Coelho"
+"If you want others to be happy, practice compassion. If you want to be happy, practice compassion. - Dalai Lama"
+"Happy people plan actions, they don’t plan results. - Dennis Waitley"
+"Sometimes your joy is the source of your smile, but sometimes your smile can be the source of your joy. - Thich Nhat Hanh"
+"True happiness is... to enjoy the present, without anxious dependence upon the future. - Lucius Annaeus Seneca"
+"The most important thing is to enjoy your life—to be happy—it’s all that matters. - Audrey Hepburn"
+"Happiness is not having what you want. It is appreciating what you have. - Unknown"
+"To live is the rarest thing in the world. Most people exist, that is all. - Oscar Wilde"
+"The best way to pay for a lovely moment is to enjoy it. - Richard Bach"
+"One of the secrets of a happy life is continuous small treats. - Iris Murdoch"
+"Take time to make your soul happy. - Unknown"
+"Happiness is found when you stop comparing yourself to other people. - Unknown"
+"Wherever you go, no matter what the weather, always bring your own sunshine. - Anthony J. D'Angelo"
+"A happy life consists in the tranquility of mind. - Cicero"
+"The moments of happiness we enjoy take us by surprise. It is not that we seize them, but that they seize us. - Ashley Montagu"
+"If you aren’t grateful for what you already have, what makes you think you would be happy with more? - Roy T. Bennett"
+"Start each day with a grateful heart. - Unknown"
+"Happiness is a habit—cultivate it. - Elbert Hubbard"
+"The happier you are, the more beautiful you become. - Unknown"
+"One joy scatters a hundred griefs. - Chinese Proverb"
+"Happiness depends more on the inward disposition of mind than on outward circumstances. - Benjamin Franklin"
+"Being happy isn’t having everything in your life be perfect. Maybe it’s about stringing together all the little things. - Ann Brashares"
+"The happiness of life is made up of minute fractions—the little, soon-forgotten charities of a kiss or smile, a kind look or heartfelt compliment. - Samuel Taylor Coleridge"
+"Happiness grows at our own firesides, and is not to be picked in strangers’ gardens. - Douglas William Jerrold"
+"Happiness is the interval between periods of unhappiness. - Don Marquis"
+"Blessed are those who can give without remembering and take without forgetting. - Elizabeth Bibesco"
+"Happiness walks on busy feet. - Kitte Turmell"
+"Happiness is only real when shared. - Christopher McCandless"
+"The essence of philosophy is that a man should so live that his happiness shall depend as little as possible on external things. - Epictetus"
+"Success is getting what you want, happiness is wanting what you get. - W.P. Kinsella"
+"Happiness is the highest good. - Aristotle"
+"A calm and modest life brings more happiness than the pursuit of success combined with constant restlessness. - Albert Einstein"
+"May your choices reflect your hopes, not your fears. - Nelson Mandela"
+"Oftentimes, the happiest people are those who simply have the best attitude about whatever comes their way. - Unknown"
+"Great happiness is to be found not in comfort, but in conquering obstacles. - Zig Ziglar"
+"To be happy, we must be true to nature and carry our age along with us. - Margaret Fuller"
+"Find ecstasy in life; the mere sense of living is joy enough. - Emily Dickinson"
+"The mere sense of living is joy enough. - Emily Dickinson"
+"Happiness is having a large, loving, caring, close-knit family in another city. - George Burns"
+"Nothing can bring you happiness but yourself. - Ralph Waldo Emerson"
+"Let your smile change the world, but don’t let the world change your smile. - Connor Franta"
+"Happiness is contagious—spread a little wherever you go. - Unknown"
+"Smile, and the world smiles with you. - Stanley Gordon West"
+"Happiness is like jam. You can’t spread even a little without getting some on yourself. - Unknown"
+"Don’t let the silly little things steal your happiness. - Unknown"
+"Gratitude is the fairest blossom which springs from the soul. - Henry Ward Beecher"
+"The happiest people take life day by day, complain very little, and are thankful for the little things. - Unknown"
+"Count your blessings, not your problems. - Roy T. Bennett"
+"Sunshine is the best medicine. - Unknown"
     ],
     sad: [
         "Sadness is but a wall between two gardens. - Kahlil Gibran",
         "The pain you feel today is the strength you feel tomorrow. - Unknown",
-        "Sadness is but a wall between two gardens. - Kahlil Gibran",
-        "The pain you feel today is the strength you feel tomorrow. - Unknown",
-        "Tears come from the heart and not from the brain. - Leonardo da Vinci",
-        "Even the darkest night will end and the sun will rise. - Victor Hugo",
-        "This too shall pass. Pain is temporary, but growth is permanent.",
-        "Sadness flies away on the wings of time. - Jean de La Fontaine",
-        "Every adversity, every heartbreak, carries with it the seed of an equal or greater benefit. - Napoleon Hill",
-        "You never know how strong you are until being strong is your only choice. - Bob Marley",
-        "Sadness gives depth. Happiness gives height. Sadness gives roots. Happiness gives branches. Both are needed. - Osho",
-        "There is no despair so absolute as that which comes with the first moments of our first great sorrow. - George Eliot",
-        "Heavy hearts, like heavy clouds in the sky, are best relieved by the letting of a little water. - Christopher Morley",
-        "Some people grieve in silence. Sometimes, the only thing they can talk about is the weather. - Unknown",
-        "Grief is the price we pay for love. - Queen Elizabeth II",
-        "The emotion that can break your heart is sometimes the very one that heals it. - Nicholas Sparks",
-        "The walls we build around us to keep sadness out also keep out the joy. - Jim Rohn",
-        "Sadness is a natural part of life. Accept it, learn from it, and move on.",
-        "When you come out of the storm, you won’t be the same person who walked in. That’s what this storm's all about. - Haruki Murakami",
-        "Tears are words that the heart can't express.",
-        "Grief does not change you, Hazel. It reveals you. - John Green",
-        "Sometimes, the best way to heal a broken heart is to give it time.",
-        "Every storm runs out of rain. - Maya Angelou",
-        "What brings us to tears will lead us to grace. - Gloria Gaither",
-        "The cure for anything is salt water: sweat, tears, or the sea. -Isak Dinesen",
-        "Keep your face always toward the sunshine—and shadows will fall behind you. - Walt Whitman",
-        "Your sadness is a gift. Like your grief, it is a doorway to your deeper wisdom. - Joanna Macy",
-        "Even the darkest night will end and the sun will rise. - Victor Hugo",
-        "Sometimes you have to drown your sorrow to hold onto the happiness. - Unknown",
-        "Grief is not as heavy as guilt, but it takes more away from you. - Veronica Roth",
-        "Sadness corrodes the heart. Shine your light on the darkness to heal it.",
-        "The deeper that sorrow carves into your being, the more joy you can contain. - Khalil Gibran",
-        "Sorrow prepares you for joy. It violently sweeps everything out of your house, so that new joy can find space to enter. - Rumi",
-        "Don’t grieve. Anything you lose comes round in another form. - Rumi",
-        "Sadness is an ocean, and sometimes we just need to float.",
-        "When you feel like giving up, remember why you held on for so long in the first place.",
-        "Pain nourishes courage. You can’t be brave if you’ve only had wonderful things happen to you. - Mary Tyler Moore",
-        "The sadness will eventually run its course. Give it time and be gentle with yourself.",
-        "A sad soul can kill you quicker than a germ. - John Steinbeck",
-        "Sometimes tears are the language of pain we don’t know how to express.",
-        "No matter how you feel, get up, dress up, show up, and never give up.",
-        "In the middle of winter, I found there was, within me, an invincible summer. - Albert Camus",
-        "Every tear teaches us something. - Paulo Coelho",
-        "Sadness is but the shadow of joy.",
-        "Crying is how your heart speaks when your lips can’t explain
-
+        "Tears come from the heart and not from the brain. - Leonardo da Vinci"
     ],
     angry: [
         "Anger is one letter short of danger. - Eleanor Roosevelt",
         "The greatest remedy for anger is delay. - Lucius Annaeus Seneca",
-        "Anger is one letter short of danger. - Eleanor Roosevelt",
-        "The greatest remedy for anger is delay. - Lucius Annaeus Seneca",
-        "Anger is a momentary madness, so control your passion or it will control you. - G. M. Trevelyan",
-        "Speak when you are angry and you will make the best speech you will ever regret. - Ambrose Bierce",
-        "To be angry is to revenge the faults of others on ourselves. - Alexander Pope",
-        "For every minute you remain angry, you give up sixty seconds of peace of mind. - Ralph Waldo Emerson",
-        "Anger is a bad counselor. - Swedish Proverb",
-        "Never respond to an angry person with a fiery comeback, even if he deserves it. - Bohdi Sanders",
-        "Anger begins with folly, and ends with repentance. - Benjamin Franklin",
-        "Holding onto anger is like drinking poison and expecting the other person to die. - Buddha",
-        "Anger is an acid that can do more harm to the vessel in which it is stored than to anything on which it is poured. - Seneca",
-        "Whatever is begun in anger ends in shame. - Benjamin Franklin",
-        "The best fighter is never angry. - Lao Tzu",
-        "Sometimes it takes an overwhelming breakdown to have an undeniable breakthrough.",
-        "Don't let your anger lead you to hatred.",
-        "Anger is never without a reason, but seldom with a good one. - Benjamin Franklin",
-        "Bitterness is like cancer. It eats upon the host. But anger is like fire. It burns it all clean. - Maya Angelou",
-        "An angry man is again angry with himself when he returns to reason. - Publilius Syrus",
-        "Instead of getting angry, use that energy to improve your situation.",
-        "Anger is a short madness. - Horace",
-        "Never go to bed angry; stay up and fight. - Phyllis Diller",
-        "Anger is a wind that blows out the lamp of the mind. - Robert Green Ingersoll",
-        "Speak when you are angry— and you will make the best speech you will ever regret. - Ambrose Bierce",
-        "Anger and intolerance are the enemies of correct understanding. - Mahatma Gandhi",
-        "When angry, count to ten before you speak. If very angry, a hundred. - Thomas Jefferson",
-        "Anger is fuel for the fire of life; control it, or it controls you.",
-        "Anger is an energy that demands to be transformed.",
-        "The greatest remedy for anger is delay. - Seneca",
-
+        "Anger is a momentary madness, so control your passion or it will control you. - G. M. Trevelyan"
     ],
     inspired: [
         "The best way to predict the future is to create it. - Peter Drucker",
         "Inspiration exists, but it has to find you working. - Pablo Picasso",
-        "The best way to predict the future is to create it. - Peter Drucker",
-        "Inspiration exists, but it has to find you working. - Pablo Picasso",
-        "The only way to do great work is to love what you do. - Steve Jobs",
-        "Don’t watch the clock; do what it does. Keep going. - Sam Levenson",
-        "Success usually comes to those who are too busy to be looking for it. - Henry David Thoreau",
-        "The harder you work for something, the greater you’ll feel when you achieve it.",
-        "Dream bigger. Do bigger.",
-        "Don’t stop when you’re tired. Stop when you’re done.",
-        "Little minds are tamed and subdued by misfortune; but great minds rise above it. - Washington Irving",
-        "What lies behind us and what lies before us are tiny matters compared to what lies within us. - Ralph Waldo Emerson",
-        "Do what you can with all you have, wherever you are. - Theodore Roosevelt",
-        "The future belongs to those who believe in the beauty of their dreams. - Eleanor Roosevelt",
-        "Push yourself because no one else is going to do it for you.",
-        "Great things never come from comfort zones.",
-        "Dream it. Wish it. Do it.",
-        "Success is not in what you have, but who you are. - Bo Bennett",
-        "Your limitation—it’s only your imagination.",
-        "Sometimes later becomes never. Do it now.",
-        "Dream bigger. Do bigger.",
-        "Don’t quit. Suffer now and live the rest of your life as a champion. - Muhammad Ali",
-        "It always seems impossible until it’s done. - Nelson Mandela",
-        "The secret of getting ahead is getting started. - Mark Twain",
-        "Work hard in silence, let your success be your noise. - Frank Ocean",
-        "Whatever you are, be a good one. - Abraham Lincoln",
-        "The best revenge is massive success. - Frank Sinatra",
-        "Do something today that your future self will thank you for.",
-        "Don’t wish it were easier. Wish you were better. - Jim Rohn",
-
+        "The only way to do great work is to love what you do. - Steve Jobs"
     ],
     confident: [
         "Confidence is preparation. Everything else is beyond your control. - Richard Kline",
         "Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle. - Christian D. Larson",
-        "Confidence is preparation. Everything else is beyond your control. - Richard Kline",
-        "Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle. - Christian D. Larson",
-        "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful. - Albert Schweitzer",
-        "With confidence, you have won before you have started. - Marcus Garvey",
-        "Confidence comes not from always being right but from not fearing to be wrong. - Peter T. Mcintyre",
-        "One important key to success is self-confidence. An important key to self-confidence is preparation. - Arthur Ashe",
-        "Believe you can and you're halfway there. - Theodore Roosevelt",
-        "Confidence is not 'they will like me.' Confidence is 'I'll be fine if they don't.' - Christina Grimmie",
-        "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment. - Ralph Waldo Emerson",
-        "The most beautiful thing you can wear is confidence. - Blake Lively",
-        "Confidence is silent. Insecurities are loud.",
-        "Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence. - Helen Keller",
-        "Confidence is contagious. So is lack of confidence. - Vince Lombardi",
-        "Too many people overvalue what they are not and undervalue what they are. - Malcolm S. Forbes",
-        "The more you believe in yourself, the more confidence you will build.",
-        "Confidence comes from discipline and training. - Robert Kiyosaki",
-        "Always remember you are braver than you believe, stronger than you seem, and smarter than you think. - A.A. Milne",
-        "With the new day comes new strength and new thoughts. - Eleanor Roosevelt",
-        "You gain strength, courage, and confidence by every experience in which you really stop to look fear in the face. - Eleanor Roosevelt",
-        "Don’t wait until everything is just right. It will never be perfect. There will always be
-
+        "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful. - Albert Schweitzer"
     ],
     anxious: [
         "Do not anticipate trouble, or worry about what may never happen. Keep in the sunlight. - Benjamin Franklin",
         "Anxiety is a thin stream of fear trickling through the mind. If encouraged, it cuts a channel into which all other thoughts are drained. - Arthur Somers Roche",
-        "Do not anticipate trouble, or worry about what may never happen. Keep in the sunlight. - Benjamin Franklin",
-        "Anxiety is a thin stream of fear trickling through the mind. If encouraged, it cuts a channel into which all other thoughts are drained. - Arthur Somers Roche",
-        "Nothing in the affairs of men is worthy of great anxiety. - Plato",
-        "You don’t have to control your thoughts. You just have to stop letting them control you. - Dan Millman",
-        "Don't let your mind bully your body into believing it must carry the burden of its worries. - Astrid Alauda",
-        "Anxiety happens when you think you have to figure everything out all at once. - Unkown",
-        "Ask yourself: Is my worry something I can fix? If yes—then fix it, if no—then forget it.",
-        "Worrying is like paying a debt you don’t owe. - Mark Twain",
-        "Anxiety does not empty tomorrow of its sorrows, but only empties today of its strength. - Charles Spurgeon",
-        "You’re stronger than your anxious thoughts.",
-        "Surrender to what is. Let go of what was. Have faith in what will be.",
-        "Nothing diminishes anxiety faster than action.",
-        "Sometimes the most productive thing you can do is relax.",
-        "Just when the caterpillar thought the world was over, it became a butterfly.",
-        "Do what you can, with what you have, where you are. - Theodore Roosevelt",
-        "Replace fear of the unknown with curiosity.",
-        "This too shall pass.",
-        "Breath is the power behind all things. - Sylvia Plath",
-        "Anxiety makes you feel like you're drowning when you’re really just swimming.",
-        "Worry often gives a small thing a big shadow. - Swedish Proverb",
-        "Don’t let your struggle become your identity.",
-        "Feelings are just visitors, let them come and go. - Mooji",
-        "Anxiety is going to tell you that you can't withstand the storm. But you’re the storm
-
+        "Nothing in the affairs of men is worthy of great anxiety. - Plato"
     ],
     hopeful: [
         "Hope is being able to see that there is light despite all of the darkness. - Desmond Tutu",
         "The darkest hour has only sixty minutes. - Morris Mandel",
-        "Hope is being able to see that there is light despite all of the darkness. - Desmond Tutu",
-        "The darkest hour has only sixty minutes. - Morris Mandel",
-        "Hope is a waking dream. - Aristotle",
-        "Once you choose hope, anything’s possible. - Christopher Reeve",
-        "Hope is the thing with feathers that perches in the soul. - Emily Dickinson",
-        "Where there is no vision, there is no hope. - George Washington Carver",
-        "Hope smiles from the threshold of the year to come, whispering ‘it will be happier’... - Alfred Lord Tennyson",
-        "The best way to not feel hopeless is to get up and do something. - Barack Obama",
-        "Let your hopes, not your hurts, shape your future. - Robert H. Schuller",
-        "Hope is passion for what is possible. - Soren Kierkegaard",
-        "Hope is the fuel that powers us through the darkest nights.",
-        "Even the smallest star shines in the darkest night.",
-        "Hope is the only thing stronger than fear. - Suzanne Collins",
-        "With hope, anything is possible.",
-        "Hope is the anchor of the soul. - Hebrews 6:19",
-        "Hope gives you wings to soar above all despair.",
-        "Hope sees the invisible, feels the intangible, and achieves the impossible.",
-        "Hope is the pillar of strength in troubled times.",
-        "Hope is the heartbeat of the soul.",
-        "Don’t lose hope, when the sun goes down the stars come out.",
-        "Hope is the light that guides us through darkness.",
-        "Hold on to hope, it is the bridge to your dreams.",
-        "Hope renews us—every day, every moment.",
-        "Hope is a powerful weapon, stronger than any obstacle.",
-        "Even the darkest night will end and the sun will rise. - Victor Hugo",
-        "Hope is the whisper that tells us ‘don’t give up’.",
-        "Hope is the seed from which dreams grow.",
-        "Hope is like the sun, which, as we journey toward it, casts the shadow of our burden behind us. - Samuel
-
+        "Hope is a waking dream. - Aristotle"
     ]
 };
 
+// Function to display the quote
 function getQuote(emotion) {
     const quoteArray = quotes[emotion];
-    if (!quoteArray || quoteArray.length === 0) {
-        return "No quotes available for this emotion.";
-    }
     const randomQuote = quoteArray[Math.floor(Math.random() * quoteArray.length)];
-
+    
     const quoteDisplay = document.getElementById("quote");
+
+    // Add fade-out effect before displaying the new quote
     quoteDisplay.classList.add("fade-out");
     setTimeout(() => {
         quoteDisplay.innerText = randomQuote;
