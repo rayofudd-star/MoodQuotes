@@ -93,5 +93,40 @@ body {
     opacity: 0;
 }
 
+/* Stack buttons vertically on all screens */
+.emotion-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Make buttons stretch to container width on small screens */
+.emotion-btn {
+  width: 100%;
+  max-width: 300px; /* Optional: limit max width */
+  box-sizing: border-box;
+}
+
+/* Optional: adjust button size on small screens */
+@media (min-width: 600px) {
+  /* For tablets or larger, you can change to horizontal if desired */
+  .emotion-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .emotion-btn {
+    width: auto;
+    min-width: 120px;
+  }
+}
+.container {
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+}
+
+
 
 
